@@ -10,8 +10,10 @@ public class Main {
     }
     public void imprimirRectangulo (Rectangulo r,Rectangulo r2){
         System.out.println("Area de rectangulo: " + r.calcularArea());
-        System.out.println("Este rectangulo: " + r.getNombre() +" es: " + r.esMayor(r2));
+        System.out.println("Este: " + r.getNombre() +" es mayor? : " + r.esMayor(r2));
         System.out.println("Es cuadrado? " + r.esCuadrado());
+        System.out.println("Largo del lado superior " + r.largoLadoSuperior() );
+       System.out.println( r.paradoOascostado());
     }
     public static void main(String[] args) {
         Main m = new Main();

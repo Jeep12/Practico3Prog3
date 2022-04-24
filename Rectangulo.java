@@ -67,4 +67,19 @@ public class Rectangulo {
         }
         return false;
     }
+    public double largoLadoSuperior (){
+        return  this.p2.getX() - this.p1.getX();
+    }
+    public String paradoOascostado(){
+        double alto, ancho, area;
+        ancho = this.p2.getX() - this.p1.getX();
+        alto = this.p2.getY() - this.p1.getY();
+        if (ancho > alto){
+            return "Esta acostado";
+        }else if (ancho < alto){
+            return "Esta parado";
+        }else {
+            return "Es un cuadrado, no esta ni parado ni acostado";
+        }
+    }
 }
